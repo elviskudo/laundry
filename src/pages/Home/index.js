@@ -13,6 +13,9 @@ const Home = () => {
                 </View>
                 <Money />
             </ImageBackground>
+            <View style={styles.services}>
+                <Text style={styles.heading}>Our Services</Text>
+            </View>
         </View>
     )
 }
@@ -41,5 +44,15 @@ const styles = StyleSheet.create({
     username: {
         fontSize: 18,
         fontFamily: 'Raleway-Bold'
-    }
+    },
+    services: {
+        width: windowWidth,
+        marginTop: 16,
+        height: windowHeight * 0.4,
+        paddingLeft: 27,
+    },
+    heading: {
+        width: windowWidth * 0.85,
+        fontWeight: 'bold',
+    },
 })
